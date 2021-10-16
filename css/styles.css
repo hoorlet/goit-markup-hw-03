@@ -11,8 +11,7 @@
     --white-text-color: #fff;
     --accent-text-color: #2196f3
 }
-.page-s,
-.page-p {
+body {
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.71;
@@ -29,6 +28,7 @@
   }
 address {
     font-style: normal;
+    margin-top: 20px;
   }
 h1,
 h2,
@@ -38,6 +38,8 @@ p {
   margin: 0;
 }
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 h2 {
@@ -51,6 +53,7 @@ h2 {
   img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
 /* header */
 .header {
@@ -151,7 +154,6 @@ h2 {
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    padding-bottom: 30px;
 }
 .button {
     font-weight: 700;
@@ -176,7 +178,7 @@ h2 {
 /* section-pecul */
 .container {
     width: 1200px;
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
 }
 .pecul-list {
@@ -200,15 +202,16 @@ h2 {
 }
 .feature {
     display: flex;
-    padding-bottom: 94px;
 }
 .feature-item:not(:last-child) {
     margin-right: 30px;
 }
-.section,
-.section-team {
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.section-feature {
+    padding-top: 0;
 }
 .section-title {
     text-align: center;
@@ -222,6 +225,7 @@ h2 {
     display: flex;
 }
 .team-title {
+    margin-bottom: 10px;
     color: var(--title-text-color);
 }
 .team-item:not(:last-child) {
@@ -267,22 +271,17 @@ color: var(--accent-text-color);
   }
 
   
-.section-f {
+footer {
     background-color: #2F303A;
-    padding: 60px;
+    padding: 60px 0;
 }
-.logo-link-f {
-    padding-left: 40px;
-}
-.address {
-    margin-top: 20px;
-  }
-.nav-item-f:not(:last-child) {
+.nav-item-f:not(:first-child) {
     margin-top: 9px;
 }
 /* portfolio */
+
 .filter-button {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
@@ -308,11 +307,15 @@ color: var(--accent-text-color);
     box-shadow: 0px 3px 1px rgba(0,0,0,0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
+.portfolio-title{
+    margin-bottom: 4px;
+}
 .portfolio-titel {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    padding-bottom: 36px;
   }
 .portfolio-list {
     margin-top: 50px;
